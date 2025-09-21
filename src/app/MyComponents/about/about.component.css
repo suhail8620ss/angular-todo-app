@@ -1,0 +1,84 @@
+/* about.component.css */
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+/* Jumbotron card */
+.jumbotron {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Gradient background */
+  color: #1e1e1e;
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.jumbotron:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+.jumbotron .display-4 {
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  margin-bottom: 1rem;
+}
+
+/* Lead paragraph */
+.jumbotron .lead {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  margin-bottom: 1.5rem;
+}
+
+/* Horizontal line */
+.jumbotron hr {
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  margin: 1.5rem 0;
+}
+
+/* Normal paragraph */
+.jumbotron p {
+  color: #e0e0e0;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Button */
+.jumbotron .btn-primary {
+  background-color: #ff7e5f;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.jumbotron .btn-primary:hover {
+  background-color: #feb47b;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 2rem 1rem;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 2rem;
+  }
+
+  .jumbotron .lead {
+    font-size: 1rem;
+  }
+}

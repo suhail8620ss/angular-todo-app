@@ -1,3 +1,86 @@
-.strike{
+/* .strike{
      text-decoration: line-through;
+} */
+/* todo-item.component.css */
+
+/* Main Todo Item Wrapper */
+div.my-3 {
+  background-color: #ffffff;
+  padding: 1.2rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover effect for Todo Item */
+div.my-3:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Todo Title */
+h5 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+/* Todo Description */
+p {
+  margin-bottom: 0.8rem;
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+/* Strikethrough for completed todos */
+.strike {
+  text-decoration: line-through;
+  color: #adb5bd !important;
+}
+
+/* Checkbox styling */
+.form-check-input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.form-check-input:checked {
+  transform: scale(1.1);
+}
+
+/* Checkbox label */
+.form-check-label {
+  margin-left: 0.5rem;
+  font-weight: 500;
+  color: #495057;
+}
+
+/* Delete Button */
+button.btn-danger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.8rem;
+  padding: 0.35rem 0.6rem;
+  transition: all 0.3s ease;
+}
+
+button.btn-danger:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(220,53,69,0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  div.my-3 {
+    padding: 1rem;
+  }
+
+  button.btn-danger {
+    top: 8px;
+    right: 8px;
+  }
 }
